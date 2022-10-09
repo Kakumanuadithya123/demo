@@ -1,0 +1,12 @@
+words=['Arun','Varun','Kent','Eat','Pot','Net','Peak','Peacock','Zebra','Nato','Toe','Poke','Knife','Poet','Venus','Ant']
+let=['A','K','E','O','T','P','N']
+res=[]
+for w in words:
+    c=0
+    for l in let:
+        if l in w.upper():
+            c=c+1
+    if c==len(w):
+        res.append(w)
+print("result is:",res)
+        
