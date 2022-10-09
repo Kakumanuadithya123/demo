@@ -1,0 +1,10 @@
+words=input("enter a word or sentence")
+vowels=['a','e','i','o','u','A','E','I','O','U']
+count=0
+for v in vowels:
+    if v in words:
+        count=count+1
+if count>=5:
+    print("it has all vowels")
+else:
+    print("it doesnot has all vowels")
