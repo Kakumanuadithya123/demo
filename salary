@@ -1,0 +1,29 @@
+n=int(input("enter no of employees:"))
+l=[]
+bonus=100
+total=0
+names=[]
+for i in range(n):
+    name=input("enter employee name:")
+    names.append(name)
+    sal=int(input("enter employee salary:"))
+    l.append(sal)
+    emp_id=input("enter employee id:")
+    exp=int(input("enter employee experience:"))
+    if exp<=2:
+        print("no bonus")
+    else:
+        net_sal=sal+bonus
+        print("net salary of the employee is",net_sal)
+
+print("name:salary")
+for i in range(n):
+    print(names[i],":",l[i])
+L=sorted(l)
+print("highest salary:",L[-1])
+print("lowest salary:",L[0])
+for i in range(n):
+    total=total+L[i]
+avg=total/n
+print("avg salary is ",avg)
+    
